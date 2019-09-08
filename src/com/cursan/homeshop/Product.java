@@ -1,9 +1,9 @@
 package com.cursan.homeshop;
 
 public class Product {
-    String name;
-    String description;
-    double price;
+    private String name;
+    private String description;
+    private double price;
 
     /**
      * Display a full description of the product
@@ -16,5 +16,21 @@ public class Product {
      */
     public void buy(Bill bill, Integer quantity ) {
 
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
