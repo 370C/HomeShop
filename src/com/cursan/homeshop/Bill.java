@@ -20,3 +20,4 @@ public class Bill {
         this.products.put(product,quantity);
     }
 }
+chf
