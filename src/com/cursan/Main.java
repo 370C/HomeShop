@@ -1,13 +1,14 @@
 package com.cursan;
 
-import com.cursan.garage.Bike;
-import com.cursan.garage.Vehicle;
-import com.cursan.homeshop.*;
+import com.cursan.paris.Bus;
+import com.cursan.paris.moyenDeLocomotion;
+import com.cursan.paris.Parisien;
+import com.cursan.paris.Taxi;
 
 public class Main {
 
     public static void main(String[] args) {
-        Product cafe = new Product("Philips HD7866/61", "Philips SENSEO Quadrante, Noir - 1 ou 2 tasses", 79.99);
+        /*Product cafe = new Product("Philips HD7866/61", "Philips SENSEO Quadrante, Noir - 1 ou 2 tasses", 79.99);
         Product tv = new Television("TV Samsung UE49MU6292", "Smart TV LED incurvée 49\"", 599, 49, "LED");
         Fridge fridge = new Fridge("BEKO TSE 1042 F", "Réfrigérateur BEKO 130L - Classe A+ - blanc", 189, 130, false);
 
@@ -19,6 +20,14 @@ public class Main {
         bill.addProduct(tv, 1);
         bill.addProduct(fridge, 1);
 
-        Vehicle v = new Bike();
+        Vehicle v = new Bike();*/
+
+        Bus bus = new Bus();
+        Parisien segolene = new Parisien();
+        segolene.seDeplacer(bus);
+        Taxi taxi = new Taxi();
+        segolene.seDeplacer(taxi);
+        moyenDeLocomotion taxi2 = new Taxi();
+        segolene.seDeplacer(taxi2);
     }
 }

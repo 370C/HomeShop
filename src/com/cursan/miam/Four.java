@@ -1,8 +1,8 @@
 package com.cursan.miam;
 
 public class Four {
-    private int puissance;
-    private int capacite;
+    protected int puissance;
+    protected int capacite;
 
     private Resistance resistance;
     private Soufflerie soufflerie;
